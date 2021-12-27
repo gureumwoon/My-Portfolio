@@ -37,8 +37,18 @@ a {
 }
 
 ul {
-    list-style: none;
     padding-left: 0;
+}
+
+li {
+    list-style: none;
+}
+
+button {
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+    outline: none;
 }
 /* Typography */
 h1 {
@@ -73,7 +83,8 @@ p {
 #navbar {
     display:flex;
     justify-content: space-between;
-    background-color:#4994CB ;
+    background: url("img/navbar.png") center/cover no-repeat;
+    /* background-color:#5299CF; */
     align-items: center;
     color:var(--color-white);
     padding: 16px;
@@ -98,4 +109,39 @@ p {
 
 .navbar-menu__item:hover{
     background-color:#2175b1;
+}
+
+/* Home */
+
+#home {
+    background:url("img/portfolio_head.png") center/cover no-repeat;
+    padding: 40px;
+    text-align: center;
+}
+
+.home-avatar {
+    width:250px;
+    height:250px;
+    border-radius: 50%;
+    border: 2px solid var(--color-white);
+}
+
+.home-title,
+.home-description {
+    color:#2175b1;
+}
+
+.home-title{
+    display: block;
+    padding-top:50px;
+}
+
+.home-contact {
+    font-size: var(--font-regular);
+    font-weight: var(--weight-bold);
+    margin:24px;
+    padding: 8px 12px;
+    border: 2px solid #2175b1;
+    border-radius: var(--size-border-radius);
+    color: #2175b1;
 }
