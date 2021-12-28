@@ -17,8 +17,15 @@ navbarMenu.addEventListener('click', (event) => {
     if (link === null) {
         return;
     }
+    navbarMenu.classList.remove('open');
     scrollIntoView(link);
-})
+});
+
+const navbarToggleBtn = document.querySelector('.navbar-toggle__btn');
+navbarToggleBtn.addEventListener('click', () => {
+    navbarMenu.classList.toggle('open');
+});
+
 
 const contactBtn = document.querySelector('.home-contact')
 contactBtn.addEventListener('click', () => {

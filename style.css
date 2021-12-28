@@ -354,25 +354,44 @@ background-color: #eeeeee;
 .navbar-toggle__btn {
     display: block;
 }
+
 #navbar {
     flex-direction: column;
     align-items: flex-start;
+    background-color: #4C98CC;
 }
+
+#navbar.navbar-dark {
+    padding: 16px;
+}
+
 .navbar-menu {
     flex-direction: column;
     text-align: center;
     width: 100%;
     display: none;
 }
+
+.navbar-menu.open {
+    display: block;
+}
+
+.section{
+    padding: 16px;
+}
+
 .about-majors {
     flex-direction: column;
 }
+
 .major {
     margin-bottom: 30px;
 }
+
 .work-projects {
     flex-direction: column;
 }
+
 .project {
     width: 100%;
   }
