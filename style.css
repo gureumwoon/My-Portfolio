@@ -87,13 +87,23 @@ p {
 
 /* Navbar */
 #navbar {
+    position: fixed;
+    width: 100%;
     display:flex;
     justify-content: space-between;
-    background: url("img/navbar.png") center/cover no-repeat;
+    background-color: transparent;
     align-items: center;
     color:var(--color-white);
     padding: 16px;
+    z-index: 10;
+    transition:all var(--animation-duration) ease-in-out;
 }
+
+#navbar.navbar-dark {
+    background-color: #4C98CC;
+    padding: 8px;
+}
+
 .navbar-logo {
     font-size: var(--font-medium);
     font-weight: var(--weight-semi-bold);
@@ -130,6 +140,7 @@ p {
 #home {
     background:url("img/portfolio_head.png") center/cover no-repeat;
     padding: 40px;
+    padding-top: 120px;
     text-align: center;
 }
 
