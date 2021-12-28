@@ -126,7 +126,7 @@ p {
 
 .navbar-toggle__btn {
     position: absolute;
-    top: 24px;
+    top: 18px;
     right: 32px;
     font-size:  24px;
     color: var(--color-white);
@@ -313,6 +313,10 @@ background-color: #eeeeee;
     color:var(--color-white);
 }
 
+.contact-email {
+    font-size: var(--font-medium);
+}
+
 .contact-title {
     margin: 32px 0;
 }
@@ -351,8 +355,18 @@ background-color: #eeeeee;
 }
 
 @media screen and (max-width: 768px) {
+    :root {
+        --font-large: 30px;
+        --font-medium: 18px;
+        --font-regular: 16px;
+        --font-small: 14px;
+        --font-micro: 12px;
+    }
 .navbar-toggle__btn {
     display: block;
+    top: 16px;
+    right: 16px;
+    font-size: var(--font-medium);
 }
 
 #navbar {
@@ -378,10 +392,13 @@ background-color: #eeeeee;
 
 .section{
     padding: 16px;
+    padding-top: 40px;
 }
 
 .about-majors {
     flex-direction: column;
+    margin-top: 30px;
+    margin-bottom: 0px;
 }
 
 .major {
@@ -394,5 +411,10 @@ background-color: #eeeeee;
 
 .project {
     width: 100%;
+    margin-bottom: 8px;
+  }
+
+  .contact-email {
+      font-size: var(--font-medium);
   }
 }
