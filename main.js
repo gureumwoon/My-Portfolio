@@ -25,6 +25,14 @@ contactBtn.addEventListener('click', () => {
     scrollIntoView('#contact');
 });
 
+
+// scroll 하면 home section이 점점 투명해짐
+const home = document.querySelector('.home-container');
+const homeHeight = home.getBoundingClientRect().height; // 702
+document.addEventListener('scroll', () => {
+    home.style.opacity = 1 - window.scrollY / homeHeight;
+});
+
 function scrollIntoView(selector) {
     const scrollTo = document.querySelector(selector);
     scrollTo.scrollIntoView({ behavior: 'smooth' });
