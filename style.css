@@ -61,7 +61,7 @@ h1 {
     font-size: var(--font-large);
     font-weight: var(--weight-bold);
     color: var(--color-skyblue);
-    margin: 16px 0;
+    margin: 20px 0;
 }
 
 h2 {
@@ -248,4 +248,31 @@ p {
     margin-left: -25px;
     margin-top: 8px;
     background-color: whitesmoke;
+}
+
+/* Contact */
+
+#contact {
+    padding:20px;
+    text-align: center;
+    background-color: #4C98CC;
+}
+
+.contact-title, .contact-email, .contact-rights {
+    color:var(--color-white);
+}
+
+.contact-title {
+    margin: 32px 0;
+}
+
+.contact-links {
+    font-size: var(--font-large);
+    margin: 24px 0;
+    transition: all var(--animation-duration) ease-in;
+}
+
+.contact-links i:hover {
+    transform: scale(1.1);
+    color:burlywood;
 }
