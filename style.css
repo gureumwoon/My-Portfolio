@@ -3,6 +3,8 @@
     /* Color */
     --color-black:#00000;
     --color-white:#ffff;
+    --color-dark-grey:#4d4d4d;
+    --color-skyblue:#2175b1;
 
     /* Font size */
     --font-large: 48px;
@@ -18,7 +20,11 @@
 
     /* Size */
     --size-border-radius: 4px;
+
+    /* Animation */
+    --animation-duration: 300ms;
 }
+
 
 /* Universal tags */
 * {
@@ -54,14 +60,14 @@ button {
 h1 {
     font-size: var(--font-large);
     font-weight: var(--weight-bold);
-    color: var(--color-black);
+    color: var(--color-skyblue);
     margin: 16px 0;
 }
 
 h2 {
     font-size: var(--font-medium);
     font-weight: var(--weight-semi-bold);
-    color:var(--color-black);
+    color:darkslategrey;
     margin: 8px 0;
 }
 
@@ -75,7 +81,7 @@ h3 {
 p {
     font-size: var(--font-regular);
     font-weight: var(--weight-regular);
-    color:var(--color-black);
+    color:var(--color-dark-grey);
     margin:4px 0;
 }
 
@@ -84,7 +90,6 @@ p {
     display:flex;
     justify-content: space-between;
     background: url("img/navbar.png") center/cover no-repeat;
-    /* background-color:#5299CF; */
     align-items: center;
     color:var(--color-white);
     padding: 16px;
@@ -108,7 +113,7 @@ p {
 }
 
 .navbar-menu__item:hover{
-    background-color:#2175b1;
+    background-color:var(--color-skyblue);
 }
 
 /* Home */
@@ -128,7 +133,7 @@ p {
 
 .home-title,
 .home-description {
-    color:#2175b1;
+    color:var(--color-skyblue);
 }
 
 .home-title{
@@ -141,7 +146,46 @@ p {
     font-weight: var(--weight-bold);
     margin:24px;
     padding: 8px 12px;
-    border: 2px solid #2175b1;
+    border: 2px solid var(--color-skyblue);
     border-radius: var(--size-border-radius);
-    color: #2175b1;
+    color: var(--color-skyblue);
+}
+
+/* Section common */
+
+.section {
+    padding:50px;
+    text-align: center;
+    max-width:1200px;
+    margin: auto;
+}
+
+.about-majors {
+    display: flex;
+    justify-content: space-between;
+    margin:80px 0;
+}
+.major-icon:hover i {
+    color:burlywood;
+    transform: rotate(-30deg) scale(1.1);
+}
+
+.major-icon i {
+    transition: all var(--animation-duration) ease;
+}
+
+.major-icon {
+    width:170px;
+    height:170px;
+    font-size:70px;
+    line-height: 170px;
+    margin:auto;
+    color:#7098b4;
+    border: 1px solid var(--color-skyblue);
+    border-radius: 50%;
+    margin-bottom: 16px;
+}
+
+.major-title {
+    color:var(--color-dark-grey);
 }
