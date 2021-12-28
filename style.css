@@ -116,6 +116,15 @@ p {
     background-color:var(--color-skyblue);
 }
 
+.navbar-toggle__btn {
+    position: absolute;
+    top: 24px;
+    right: 32px;
+    font-size:  24px;
+    color: var(--color-white);
+    display: none;
+}
+
 /* Home */
 
 #home {
@@ -196,6 +205,10 @@ p {
     color:var(--color-dark-grey);
 }
 /* Skills */
+
+#skills {
+background-color: #eeeeee;
+}
 
 .skill-container {
     width: 70%;
@@ -304,4 +317,32 @@ p {
 .contact-links i:hover {
     transform: scale(1.1);
     color:burlywood;
+}
+
+@media screen and (max-width: 768px) {
+.navbar-toggle__btn {
+    display: block;
+}
+#navbar {
+    flex-direction: column;
+    align-items: flex-start;
+}
+.navbar-menu {
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    display: none;
+}
+.about-majors {
+    flex-direction: column;
+}
+.major {
+    margin-bottom: 30px;
+}
+.work-projects {
+    flex-direction: column;
+}
+.project {
+    width: 100%;
+  }
 }
