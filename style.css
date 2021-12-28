@@ -156,9 +156,15 @@ p {
 .section {
     padding:50px;
     text-align: center;
+    margin: auto;
+}
+
+.section-container {
     max-width:1200px;
     margin: auto;
 }
+
+/* About */
 
 .about-majors {
     display: flex;
@@ -184,10 +190,6 @@ p {
     border: 1px solid var(--color-skyblue);
     border-radius: 50%;
     margin-bottom: 16px;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%;
 }
 
 .major-title {
@@ -195,8 +197,32 @@ p {
 }
 /* Skills */
 
-#skills {
-    background-color:#eeeeee ;
+.skill-container {
+    width: 70%;
+    margin: auto;
+}
+
+.skill-description {
+    display: flex;
+    justify-content: space-between;
+}
+
+.skill {
+    margin-bottom:30px;
+    color:var(--color-dark-grey);
+}
+
+.skill-bar {
+    width: 100%;
+    height: 20px;
+    background-color: var(--color-skyblue);
+    border-radius: 10px;
+}
+
+.skill-value {
+    height:20px;
+    border-radius: 10px;
+    background-color: burlywood;
 }
 
 /* Project */
@@ -258,8 +284,6 @@ p {
 /* Contact */
 
 #contact {
-    padding:20px;
-    text-align: center;
     background-color: #4C98CC;
 }
 
