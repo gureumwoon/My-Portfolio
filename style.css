@@ -193,6 +193,11 @@ p {
 .major-title {
     color:var(--color-dark-grey);
 }
+/* Skills */
+
+#skills {
+    background-color:#eeeeee ;
+}
 
 /* Project */
 
